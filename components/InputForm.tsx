@@ -64,7 +64,7 @@ const InputForm = () => {
 					className={`input-field ${
 						errors.email?.message
 							? ' focus:bg-tomato/10 focus:text-tomato focus:ring-tomato active:bg-tomato/10 active:ring-tomato'
-							: ' text-darkSlateGrey ring-darkSlateGrey focus:ring-darkSlateGrey active:ring-darkSlateGrey'
+							: ' text-darkSlateGrey focus:ring-darkSlateGrey active:ring-darkSlateGrey'
 					}`}
 				/>
 			</div>
