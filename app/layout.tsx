@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${roboto.className} h-screen bg-charcoalGrey md:grid md:place-content-center`}>
+				className={`${roboto.className} h-screen bg-charcoalGrey text-white md:grid md:place-content-center`}>
 				{children}
 			</body>
 		</html>
