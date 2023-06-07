@@ -1,13 +1,14 @@
 type Props = {
-	title: string
+	label: string
 }
-const Button = ({ title }: Props) => {
+const Button = ({ label }: Props) => {
 	return (
 		<button
 			type='submit'
-			className='w-full rounded-lg bg-darkSlateGrey py-4 text-center font-bold tracking-wide text-white hover:bg-btnGradient'>
-			{title}
+			className='w-full rounded-lg bg-darkSlateGrey py-4 text-center font-bold tracking-wide text-white hover:bg-btnGradient hover:shadow-xl'>
+			{label}
 		</button>
 	)
 }
+
 export default Button

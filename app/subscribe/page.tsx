@@ -1,8 +1,12 @@
 import Button from '@/components/Button'
 import Image from 'next/image'
 
-type Props = {}
-const Subscribe = (props: Props) => {
+type Props = {
+	searchParams: {
+		email: string
+	}
+}
+const Subscribe = ({ searchParams: { email } }: Props) => {
 	return (
 		<main className='flex h-screen flex-col justify-center gap-y-10 bg-white px-6 py-10 md:h-min md:max-w-lg md:rounded-4xl md:px-16 md:py-12'>
 			<div>
@@ -14,13 +18,13 @@ const Subscribe = (props: Props) => {
 				</h1>
 				<p className='text-darkSlateGrey'>
 					A confirmation email has been sent to{' '}
-					<span className='font-bold'>ash@loremcompany.com</span>. Please open
-					it and click the button inside to confirm your subscription
+					<span className='font-bold'>{email}</span>. Please open it and click
+					the button inside to confirm your subscription
 				</p>
 			</div>
 
 			<div className='sticky top-[100vh]'>
-				<Button title='Dismiss message' />
+				<Button label='Dismiss message' />
 			</div>
 		</main>
 	)
